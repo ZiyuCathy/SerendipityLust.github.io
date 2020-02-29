@@ -140,18 +140,24 @@
         </header>
 
         <div class="post-content">
-            <p>最近在苦逼地准备面试，感觉以后找工作也会需要，所以先存在这儿<br>Bond Valuation<br>Every year until the bond matures, I can get regular interest payments. At maturity, I get the final interest payment as well as the face value(bond principal) of the bond.</p>
+            <p>最近在苦逼地准备面试，感觉以后找工作也会需要，所以先存在这儿。</p>
+<ol>
+<li>Bond Valuation<br>Every year until the bond matures, I can get regular interest payments. At maturity, I get the final interest payment as well as the face value(bond principal) of the bond.</li>
+</ol>
 <p>Key: Interest Payment + Bond Principal</p>
-<p>问题：<br>算一个face是100，每年付5刀的3年到期的coupon（除了本金）的现值，YTM是10%。<br>YTM: If you hold the bond at a present value of 120.44 and hold it to maturity, you will earn a return of YTM per year.</p>
+<ul>
+<li>问题：<br>算一个face是100，每年付5刀的3年到期的coupon（除了本金）的现值，YTM是10%。<br>YTM: If you hold the bond at a present value of 120.44 and hold it to maturity, you will earn a return of YTM per year.</li>
+</ul>
 <p>Step1: calculate the each year’s interest payment<br>Step2: calculate the present value(discount the cash flow/interest payment at Yield-to-Maturity)</p>
 <ol start="2">
-<li>Duration and volatility<br>Calculate a bond’s average maturity by its duration.<br>Duration is the weighted average of the times when the bond’s cash payment are received.<br>The times are the futures years 1, 2, 3, etc., extending to the final maturity date.<br>The weight for each year is the present value of the cash flow received at that time divided by the total present value of the bond.</li>
+<li>Duration and volatility<br>Calculate a bond’s average maturity by its duration.<br>Duration is the weighted average of the times when the bond’s cash payment are received.<br>The times are the futures years 1, 2, 3, etc., extending to the final maturity date.<br>The weight for each year is the present value of the cash flow received at that time divided by the total present value of the bond.<br>Duration measures the exposure of the bond’s price to fluctuations in interest rates. It is how bond prices change when interest rates change. For this purpose, it is best to use modified duration or volatility. (Investors regularly monitor the duration of their bond portfolios to ensure that they are not running undue risk.)</li>
 </ol>
-<p>Duration measures the exposure of the bond’s price to fluctuations in interest rates. It is how bond prices change when interest rates change. For this purpose, it is best to use modified duration or volatility. (Investors regularly monitor the duration of their bond portfolios to ensure that they are not running undue risk.)</p>
 <ul>
-<li>measures the percentage change in bond price for a percentage-point change in yield.</li>
+<li><p>measures the percentage change in bond price for a percentage-point change in yield.</p>
+</li>
+<li><p>问题：<br>duration的定义以及在风险管理中的应用？<br>duration matching对冲的是什么风险？interest rate risk<br>做这个买/卖treasury的反向操作正好可以抵消yield里rates变化的那一部分. (买了corp bond, rates上升时, 债卷负收益, 这一部分负收益正好被卖的treasury的正收益抵消)</p>
+</li>
 </ul>
-<p>问题：<br>duration的定义以及在风险管理中的应用？<br>duration matching对冲的是什么风险？interest rate risk<br>做这个买/卖treasury的反向操作正好可以抵消yield里rates变化的那一部分. (买了corp bond, rates上升时, 债卷负收益, 这一部分负收益正好被卖的treasury的正收益抵消)</p>
 <ol start="3">
 <li>Black-Scholes Formula<br>问题：black scholes公式在什么条件下可以使用？推导时候的假设都有什么？ </li>
 </ol>
