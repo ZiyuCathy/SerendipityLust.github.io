@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 <meta name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta name="author" content="ZY">
+    <meta name="author" content="ZYderAloha">
 
 
-    <meta name="subtitle" content="WELCOME TO MY BLOG">
+    <meta name="subtitle" content="SerendipityLust">
 
 
-    <meta name="description" content="One of my superpowers.">
+    <meta name="description" content="cecfectest">
 
 
 
-<title>SerendipityLust</title>
+<title>Ziyu&#39;s Blog</title>
 
 
 
@@ -47,13 +48,32 @@
     
 
 
-<meta name="generator" content="Hexo 4.2.0"></head>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
 <body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
     <div class="wrapper">
         <header>
     <nav class="navbar">
         <div class="container">
-            <div class="navbar-header header-logo"><a href="/">ZY&#39;s Blog</a></div>
+            <div class="navbar-header header-logo"><a href="/">Ziyu&#39;s Blog</a></div>
             <div class="menu navbar-right">
                 
                     <a class="menu-item" href="/archives">Posts</a>
@@ -75,7 +95,7 @@
         <div class="container">
             <div class="navbar-header">
                 <div>
-                    <a href="/">ZY&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                    <a href="/">Ziyu&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
                 </div>
                 <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
             </div>
@@ -107,30 +127,44 @@
         }
     }
 </script>
-        <div class="main">
-            
+            <div class="main">
+                
     <div class="container">
     <div class="intro">
         <div class="avatar">
             <a href="/archives"><img src="/image/me.JPG"></a>
         </div>
-        <div class="nickname">ZYderAloha</div>
-        <div class="description"><p>What’s in a name? <strong>That which we call a rose</strong> <br>by any other name  <em>would smell as sweet</em>.</p>
+        <div class="nickname">Ziyu Huang</div>
+        <div class="description"><p>What’s in a name? <strong>That which we call a rose</strong> <br> By <em>any other name</em> would smell as sweet.</p>
 </div>
         <div class="links">
             
                 
-                    <a class="link-item" title="Blog" href="/archives">
+                    <a class="link-item" title="Blog" href="../../public/archives">
                         
                         
                             <i class="iconfont icon-blog"></i>
                         
                     </a>
                 
-                    <a class="link-item" title="Link" href="https://mail.google.com" target="_blank" rel="noopener">
+                    <a class="link-item" title="Instagram" href="">
                         
                         
-                            <i class="iconfont icon-link"></i>
+                            <i class="iconfont icon-instagram"></i>
+                        
+                    </a>
+                
+                    <a class="link-item" title="Weibo" href="">
+                        
+                        
+                            <i class="iconfont icon-weibo"></i>
+                        
+                    </a>
+                
+                    <a class="link-item" title="WeChat" href="">
+                        
+                        
+                            <i class="iconfont icon-wechat"></i>
                         
                     </a>
                 
@@ -140,13 +174,14 @@
 </div>
 
 
-        </div>
-        <footer id="footer" class="footer">
+            </div>
+            <footer id="footer" class="footer">
     <div class="copyright">
-        <strong><span>© 2020 ZY's Blog</strong>
+        <span>© ZYderAloha | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
     </div>
 </footer>
 
     </div>
 </body>
+
 </html>
