@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="ZYderAloha">
+
+
+    <meta name="subtitle" content="SerendipityLust">
+
+
+    <meta name="description" content="cecfectest">
+
+
+
+<title>控制权分析 | Ziyu&#39;s Blog</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Ziyu&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Ziyu&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">控制权分析</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">ZYderAloha</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">January 28, 2022&nbsp;&nbsp;14:45:23</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/knowledge/">knowledge</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p><strong>Controlling Interest Analysis Basic Logic (English Version)</strong><br>Step 1: in this step we look at stock ownership distribution by setting a majority of voting right as the basic representation of controling interest. With a majority of voting right, stakeholders can directly control company’s business and investment activities to decide company’s equity and debt capital. Herein, we firstly take a look into whether there is a stakeholder with controlling interest both directly and indirectly in terms of stock ownership distribution, and look after other special cases, e.g. veto right,  vote by proxy, consistent action agreement, etc.</p>
+<p>Step 2: if  having arrived at no controlling shareholder after step 1, we could further look into the board distribution and desicion machanism in terms of board of directors, seeing if there is any shareholder taking up enough seats in the board to decide company’s major issues defined in its article of incorporation, e.g. budget and business plan, heavy transaction conduction, executive employment, incentive plan, IP authorization, etc.</p>
+<p>Step 3: if having not arrived at no controlling shareholder after step 1&amp;2, we could further analyze company’s significant capital. Here, we specifically define the significant capital for SMIC.</p>
+<p>SMIC’s significant asset: Since foundries usually can gain benefits by conducting product manufacturing in a large scale, which is fullfilled by SMIC by using equipment. For Chinese foundries, under the circumstance where the leading role in foundries has been taken up by overseas companies mainly in the USA and Korea, Chinses giants can only secure clients’ admittance to its business qualification by obtaining technologies and IPs aligning with the global leading level, along with maintaining cost reduction. On the other side, foundries’ cost mainly comes from manufacturing equipment and raw materials. Based on its propectus, we could assume that SMIC itself embraces a large number of manufacturing machines, therefore, here we restrict SMIC’s significant asset to its owned equipment and leading IPs that are promised to catch up with international foundry technological level.</p>
+<p>Based on above, the key to analyze SMIC’s significant asset controling interest is:<br>manufacturing equipment: mainly focus on its owned machines and subfoundries<br>intelligent property: a company’s IP is obtained mainly from original acqusition or subsequent acquisition. Since the second way is authorization, which has nothing with IP ownership, therefore we only analyaze those IPs invented by SMIC from scratch, and further look into their specific R&amp;D methods.</p>
+<p><strong>Case study: SMIC controlling interest</strong><br>Since the beginning of its establishment, the goal of SMIC is to become the Chinese-version TSMC. Further analyze the ever-changing business requirements of SMIC by dividing its whole process into four subperiods. In each subperiod, SMIC would have conducted a series of actions to meet its corresponding business requirment, during which period, SMIC had been coming across with some main contradictaries as follows:</p>
+<p>On one hand, there exists heavy capital problem for foundries. The first reason could be that their capital need is too heavy due tothe expensive price of equipments to support their normal operation, even resulting in heavy debt. The second reason is that after the production line being put into operation, equipment can make a few persistent profits for the company due to fast depreciation. Plus, if the memory chip price enconuters a low point, the operating profit could be very small and even negative. The third reason could be the initial debt pressure and operating losses would cause foundries long return payback cycle and uncertainty for future persistent profits.</p>
+<p>On the other hand, node breakthrough could be another main difficulty for domestic foundry business. The first reason could be it is abroad companies that master the cut-edge node technology. It is impossible for domestic companies to simulate abroad frontier technology. The second reason could be that there is no foundry before the establishment of SMIC, thus we have no entrance to introduce abraod leading technology.</p>
+<p>As for capital issue, SMIC turned equity financing for help. The main investors include national fund, loal governments, domestic strategic investors,  abroad financial investors, etc. As for node upgrading, SMIC chose two ways, that is increasing investment in self-researching and trying to obtain more IP authorization. During the process of dealing with above problems, the controlling interest of SMIC is likely to transfer through stock equity, board of directors, and significant assets.</p>
+<p>For SMIC, especially, establishing nationwide subfoundries is the key measure ro solve the above two issues. On one hand, part of those subfoundries owns self-research business, thus can realize node upgrading for SMIC. On the other hand, those having no R&amp;D business are mainly responsible for </p>
+<p><strong>控制权分析基本逻辑 (Chinese Version)</strong><br>步骤一：股权层面<strong>以表决权作为控制力有无的基本判断标准</strong>。股东通过表决权可直接控制公司经营方针及投资活动，从而达到控制公司股权和债权资本的目的。因此这里从股权层面直接判断是否有直接或间接控股股东，并关注股东的特殊权利（有一票否决权、委托投票及一致行动协议）。</p>
+<p>步骤二：无控股股东情况下，董事会层面以<strong>董事占比和公司的决策机制</strong>作为是否能决定公司重大事项（基于公司章程规定-如预算BP审视、大型交易、高管任免、激励机制、IP授权等）从而控制公司重要资产（财产、人力、知识产权等）的判断标准。</p>
+<p>步骤三：若未从以上两个层面得出实际控制人，则进一步从公司重大资产层面分析，但对特定公司重大资产定义范围不同，故以下对中芯国际的重大资产进行范围确定。</p>
+<p><strong>中芯国际重大资产范围确定</strong>：晶圆代工公司需通过规模化业务以实现盈利（涉及成本和产品收入两方面），实现方式为通过<strong>某些方式</strong>制造出受客户欢迎的产品，中芯国际选择了利用设备实现规模化生产这一方式。晶圆代工市场龙头始终被国外公司占据，要想在国内无晶圆代工厂的大环境下让客户认可其晶圆代工<strong>业务资质</strong>（由产品性价比决定-制程技术和成本），因此只能在<strong>降低成本的基础</strong>上争取拥有<strong>和国际持平的技术专利</strong>。再加上晶圆代工业务成本主要为设备+原材料，根据招股说明书[1]合理判断中芯国际本身拥有大量机器设备，故这里的重大资产为其拥有的<strong>机器设备和有望实现与国际晶圆代工工艺水平相齐的知识产权</strong>。</p>
+<p>基于以上，中芯国际重大资产控制权分析重点为：</p>
+<ul>
+<li>机器设备：主要关注公司拥有的实际设备及代工子工厂</li>
+<li>知识产权：知识产权主要来源为原始取得和继受取得，但通过继受取得并不涉及IP所有权，故这里仅关注通过原始取得的知识产权，且需要进一步分析其具体研发方式。</li>
+</ul>
+<p><strong>中芯国际控制权具体分析</strong><br>中芯国际成立之初目标为建成中国的台积电，下表为整理的中芯国际由成立之初至今的股权结构及董事会层面变更分析：<br><a target="_blank" rel="noopener" href="https://uploader.shimo.im/f/Hm67A8UpYfLY258z.xlsx?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NDU1ODczNDEsImciOiJlMUF6RG5tUGxtZlo5bXFXIiwiaWF0IjoxNjQ1NTg3MDQxLCJ1c2VySWQiOjEyMjM0MzYxfQ.4UYv4vHXf69LJj5zg6xFeoWC6KQSWzxtwZ-DpJEGlic">https://uploader.shimo.im/f/Hm67A8UpYfLY258z.xlsx?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NDU1ODczNDEsImciOiJlMUF6RG5tUGxtZlo5bXFXIiwiaWF0IjoxNjQ1NTg3MDQxLCJ1c2VySWQiOjEyMjM0MzYxfQ.4UYv4vHXf69LJj5zg6xFeoWC6KQSWzxtwZ-DpJEGlic</a></p>
+<p>基于以上文件，分析中芯国际自建立以来的公司控制权变更逻辑：以下四个发展阶段的划分基于中芯国际业务诉求变更。在每个发展阶段，中芯国际有对应的业务诉求，并采取一系列方式以实现对应诉求，在实现过程中会出现一系列主要矛盾：</p>
+<p>首先，晶圆代工资金问题严重。原因一为建厂初期所需资本金大（设备价格高昂），极有可能有大量负债；原因二为生产线投产后设备因折旧快（资产消耗快）可用于生产制造为公司持续产出利润的期限短，再加上存储器芯片产品价格遇到低谷，导致经营利润小甚至亏损；原因三为初期负债压力和经营亏损会导致晶圆代工厂实现盈利的回报周期长，未来持续盈利不确定性大。</p>
+<p>再者，制程突破是国内发展晶圆代工业务的一大难点。原因一为国外公司掌握晶圆先进制程先进技术，由于国际关系问题难以借鉴国外先进工艺；原因二为在中芯国际之前，中国大陆不存在晶圆代工厂，无处引入国内先进工艺专利以快速赶上国际水平。中芯国际自建立以来的制程技术发展过程如下：<br><a target="_blank" rel="noopener" href="https://uploader.shimo.im/f/WP6QZXZL95r6ly0j.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NDU1ODc5NTQsImciOiJlMUF6RG5tUGxtZlo5bXFXIiwiaWF0IjoxNjQ1NTg3NjU0LCJ1c2VySWQiOjEyMjM0MzYxfQ.sRhkAKwoZqHSvgg7nCL7dU67uYiHpPgSYwdtqz1F8gk">https://uploader.shimo.im/f/WP6QZXZL95r6ly0j.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NDU1ODc5NTQsImciOiJlMUF6RG5tUGxtZlo5bXFXIiwiaWF0IjoxNjQ1NTg3NjU0LCJ1c2VySWQiOjEyMjM0MzYxfQ.sRhkAKwoZqHSvgg7nCL7dU67uYiHpPgSYwdtqz1F8gk</a></p>
+<p>针对资金问题，中芯国际首选通过<strong>股权融资</strong>解决，投资人主要有国家大基金、地方政府、国内战略投资者、国外财务投资者等；针对制程升级问题，主要有加大自研投入和获得专利授权这两种解决方式。在解决以上矛盾过程中，中芯国际的实际控制权可能会通过股权、董事会及重大资产发生转移。</p>
+<p>特别的，在全国各地建代工子工厂是中芯国际解决以上两种矛盾的关键举措。一方面，部分代工厂有自研业务，可以为母公司实现制程升级；另一方面无研发业务的代工厂主要负责设备生产管理，可以在实现稳定量产的同时为母公司提供资金帮助，原因为虽然母子公司之间的内部交易不产生额外利润（关联交易定价公允合法合规），但子工厂可以通过外部融资为中芯国际获取稳定的外部资金。</p>
+<p>这里认为分析中芯国际的实控权无需进一步深入分析其重大机器设备（对中芯国际来说主要为代工子工厂）的实际控制权归属。首先大部分子公司不涉及母公司的研发业务，仅为母公司提供生产、制造等服务，故本身可被视为由母公司拥有的主要<strong>机器设备</strong>资产（部分子工厂是由母公司授权的研发平台，可被视为母公司的知识产权资产）。在股权和董事会层面，母公司通过全资或绝对控股实际控制，子公司的股权及董事会结构不对母公司实际控制权的归属产生影响，故无需分析子公司的实际控制权归属。</p>
+<p>所以下面将对母公司重大资产层面实际控制权的分析限制在<strong>知识产权</strong>资产。对知识产权资产的分析主要涉及<strong>IP来源</strong>和研发方式，但由于大部分代工子工厂仅作为设备存在以获取稳定资金来源，研发业务由母公司掌管（虽部分代工子工厂专注研发，但其原理性技术工艺为从母公司处授权取得），故仅需分析母公司的研发方式。</p>
+<p>母公司招股说明书显示“公司对非专利技术和数据，一直致力于将信息保护和隔离做到最佳，通过信息分级管理、机密数据细化管理、严格审查模式、增强员工保密意识，更好地保护研发知识产权”，说明中芯国际极度重视信息保密，更不可能披露专利技术的具体研发方式，故下面仅从各个阶段的IP来源而非研发方式角度分析中芯国际知识产权资产的实际控制人。</p>
+<p><strong>创立初期（2000-2008）——由张汝京实际控制</strong><br>创立目标：快速切入晶圆代工市场，成为中国的台积电<br>业务诉求：快速实现DRAM量产<br>实现方式：通过设立8英寸和12英寸生产线、研发成熟制程<br>主要矛盾：资金不足、国际技术封锁（被台积电垄断）<br>矛盾解决方式：股权融资（吸引较多国外投资方作为财务投资人进入，且受上海政府大力支持）、[创始人张汝京引入核心技术、与摩托罗拉战略开展合作]<br>控制权实现方式：股权层面由于张汝京持股虽不足1%但通过小股权比例与公司利益保持一致；其他投资人股权分散，不谋求公司的实际控制权，本质为与张汝京行动保持一致；董事会层面张汝京担任公司唯一执行董事，决定公司日常事务，且未出现其他某一单一股东在董事会占比过大现象，各股东在董事会的话语权相对均衡；重大资产层面公司创始时的团队为实现fab厂生产的关键，提供了关键性研发工艺文件（process recipe documents）和技术培训指导（technical training manuals），由于该团队主要成员由创始人张汝京从台积电主动引入，故可将张汝京视为重大资产的实际控制人。<br>控制权配置过程：</p>
+<ol>
+<li>股权层面： </li>
+</ol>
+<ul>
+<li>公司股权结构分散，未出现控股股东；</li>
+<li>张汝京先前在德州仪器（美国半导体龙头）工作20多年，持有公司股份虽不足1%，但在建立中芯国际时引入台积电团队，与公司核心利益保持一致；</li>
+<li>国外财务投资人无从公司经营层面谋求控制权的意图；</li>
+<li>上海实业为代表的政府基金作为第一大股东无实业，也为财务投资者谋求财务回报；</li>
+<li>股权比例5%以上的主要股东无一致行动协议、无股东有一票否决权；</li>
+</ul>
+<ol start="2">
+<li>董事会层面：【公司章程规定仅CEO可以出任执行董事】</li>
+</ol>
+<ul>
+<li>CEO张汝京为公司唯一执行董事决定公司日常事务。所有股东派驻在董事会的成员只能担任非执行董事，不参与企业的日常运营；</li>
+<li>各股东未出现在董事会占1/3以上席位现象，无法控制公司重大事项决策；</li>
+</ul>
+<ol start="3">
+<li>重大资产（知识产权）层面：该阶段的新增专利由中芯国际母公司、中芯上海、中芯北京持有</li>
+</ol>
+<ul>
+<li>TSMC：2000-2002年，创立初期台积电垄断晶圆代工先进工艺技术。为突破这一技术封锁，中芯国际从台积电雇佣了100+可接触商业数据的员工，在fab厂安装部署完成后四个月就实现生产。当时中芯国际COO MARCO MORA也为台积电前雇员，将台积电研发工艺文件（process recipe documents）和技术培训指导（technical training manuals）带到中芯国际。这一操作直接导致了后续中芯国际与台积电的知识产权纠纷：</li>
+<li><ul>
+<li>2013年12月：台积电发现中芯国际硅片产品与其类似产品有惊人的相似性，故于2013年12月控诉中芯国际剽窃其知识产权（涉及5个专利及商业秘密侵占）</li>
+</ul>
+</li>
+<li><ul>
+<li>2005年1月30日：双方签署和解协议，同意于2010年12月前专利交叉授权（cross-license agreement）；台积电不再控诉中芯国际侵占其商业秘密，但并未将商业秘密授权给中芯国际使用；中芯国际将在后续六年内赔偿台积电1.75亿美金； 要求创始人张汝京于2009年退出中芯国际</li>
+</ul>
+</li>
+<li><ul>
+<li>2006年8月：台积电控诉中芯国际fab厂剽窃其130nm制程的制造工艺且将其技术秘密（know-how）用于研发90nm制程工艺</li>
+</ul>
+</li>
+<li><ul>
+<li>2006年9月3日：中芯国际控诉台积电，声称先前案件为台积电对其声誉（reputation）及商誉（goodwill）的恶意虚假指控，但由于企查查上无记录，故判断后续未被北京法院接受审理</li>
+</ul>
+</li>
+<li>2003年后中芯国际陆续从日本东芝、新加坡特许半导体、美国IBM等国际半导体公司处授权取得部分专利（非公司所有）。</li>
+</ul>
+<p><strong>混乱阶段（2008-2011）——由上海政府实际控制</strong><br>业务诉求：试图实现制程升级、实现已有制程量产、在公司经营持续亏损时实现盈利<br>实现方式：发展可实现公司长期成功的关键技术（有意拓展生产逻辑晶圆新业务）、扩充晶圆厂产能<br>主要矛盾：资金问题[晶圆厂产能加速扩充，然而设备折旧快且未折旧完全（持续购买中）再加上对原材料的需求，经营持续亏损（2010年左右才实现盈利，对比TSMC技术突破早当时已拥有折旧完的设备，仅在原材料上有需求)]、技术升级问题(存储芯片制程升级难度大、逻辑晶圆技术难度大）<br>矛盾解决方式：股权融资（上海政府引入战略投资人大唐电信）、合作研发、合作生产<br>控制权实现方式：股权层面创始人张汝京出局后，形成各方利益诉求各不相同的复杂股权结构，但未出现控股股东；董事会层面由唯一执行董事决定公司日常事务；【由于股权层面的主要股东由上海政府引入&amp;董事会层面的执行董事由上海政府背景的江上舟引入，故判断可能是上海政府实际控制中芯国际】<br>控制权配置方式：</p>
+<ol>
+<li>股权层面：形成各方利益诉求各不相同的复杂股权结构 </li>
+</ol>
+<ul>
+<li>得益于上海政府支持，战略投资人大唐电信作为第一大股东进入，后不断增资谋求实际控制权未果；</li>
+<li>由于与台积电的知识产权纠纷，创始人张汝京于2009年退出中芯国际，台积电作为第二大股东进入；</li>
+<li>股权比例5%以上的主要股东无一致行动协议、无股东有一票否决权；</li>
+</ul>
+<ol start="2">
+<li>董事会层面：无单一股东可决定公司重大事项决议【公司章程规定执行董事仅能由CEO担任，决定公司日常事务且不代表任何单一股东的利益】</li>
+</ol>
+<ul>
+<li>继张汝京后，上海政府背景的江上舟接任主席；</li>
+<li>台湾背景的王宁国经江上舟邀请担任执行董事，其任职期间形成了铁三角核心管理架构；</li>
+<li>江上舟去世后，公司董事会人员数次变更，但始终未出现但单一股东占据席位过多现象。（大唐在董事会层面谋求两个席位，但未占据1/3以上席位，后试图扶持COO杨士宁担任执行董事未果）；</li>
+</ul>
+<ol start="3">
+<li>重大资产（知识产权）层面：据招股说明书显示，除从美国IBM处通过授权取得的一个专利外，无其他新增专利。</li>
+</ol>
+<p><strong>稳定阶段（2012-2016）——由邱慈云实际控制</strong><br>业务诉求：拓宽技术层面的国际视野、坚持实现未来持续盈利的长期策略<br>实现方式：实现技术升级（自研先进逻辑工艺和特色工艺）、打造除集成电路晶圆代工外的生态服务平台（发展能带来附加值的新业务）<br>主要矛盾：资金问题（生产线初期投入需求大但由于存储器产品利润低导致回报周期长、研发投入需求大）；先进逻辑技术壁垒高，难以单靠自研解决<br>矛盾解决方式：股权融资（国家集成电路基金和地方政府大力出资）、提高资产利用效率（将过剩通用产能用于盈利较高制程生产）；引入技术专家研发先进逻辑和特色工艺<br>控制权实现方式：股权层面结构分散无控股股东；董事会层面邱慈云负责公司日常经营，且掌管研发业务，可视为实际控制人。<br>控制权配置过程：</p>
+<ol>
+<li>股权层面</li>
+</ol>
+<ul>
+<li>国家集成电路产业投资基金一期通过全资子公司鑫芯香港于2015年以明股实债方式投资中芯国际，后通过中芯国际到期回购实现有序退出；</li>
+<li>中央背景的中投集团后成为公司第二大股东，本身无实业为财务投资人；</li>
+<li>紫光股份于2016年11月以财务投资人身份首次进入，无意向提名董事会成员，无从经营层面控制中芯意图；【紫光在2013至2015年间试图通过大量并购快速切入市场缩短研发时间，为后面发展埋下了资金短缺问题。2016年自称以财务投资人身份投资中芯国际目的可能是为了后面不受限制地定期减持退出。且据中芯国际公告显示，一方面紫光未像国家大基金和大唐控股那样争取优先认购和额外认购权、承诺避免同业竞争、于2017年11月发布禁售承诺，实际于2017年12月开始减持；另一方面中芯国际非执行董事任凯担任湖北紫光国器科技的董事，与国家集成电路产业投资基金二期股份有限公司的董事路军（也为中芯国际非执行董事）均于国家开放银行任职长期从事贷款项目评审及投资业务工作，其累计在集成电路领域承诺贷款达300亿元，故猜测紫光和国家大基金类似，最终会选择退出中芯国际而非长期持有。-具体退出时间选择可能会考虑到半导体行业的周期性】</li>
+<li>股权比例5%以上的主要股东无一致行动协议、无股东有一票否决权；</li>
+</ul>
+<ol start="2">
+<li>董事会层面</li>
+</ol>
+<ul>
+<li>CEO邱慈云为公司唯一执行董事决定公司日常事务。所有股东派驻在董事会的成员只能担任非执行董事，不参与企业的日常运营；</li>
+</ul>
+<ol start="3">
+<li>重大资产（知识产权）层面：与国内外高校、前沿半导体公司及研究所合作研发；邱慈云在职期间发明多项存储及逻辑工艺专利，对该阶段实现技术升级这一关键诉求做出了卓越贡献。</li>
+</ol>
+<p><strong>突破阶段（2016-至今）——前由研发专家后由谈判专家实际控制</strong><br>阶段目标：实现科技创新、拓展国际业务、提高国际竞争力<br>业务诉求：用最低成本和精简化程序实现技术精益求精（前沿制程研发及产业化）<br>实现方式：研发前沿制程技术、购买荷兰ASML公司的EUV光刻机（功耗比大且可以精简制造程序）<br>主要矛盾：国际前沿制程技术由台积电垄断、美国阻止荷兰政府卖光刻机给华为供应商（ASML公司的主要股东为美国资本，且卖光刻机需得到荷兰政府批准）<br>矛盾解决方式：引入研发专家及谈判专家、2020年从纽交所退市在科创板上市<br>控制权实现方式：股权层面无控股股东；董事会层面前期由梁孟松，后期由蒋尚义决定公司经营管理；重大资产层面，实际控制人前期为梁孟松，因其掌管研发部门且任职期间公司实现了前沿制程（一代FinFET关键节点）技术突破，后期为蒋尚义，因其承担了公司引入荷兰EUV光刻机以实现前沿制程产业化的期望。<br>控制权配置过程：</p>
+<ol>
+<li>股权层面</li>
+</ol>
+<ul>
+<li>国家集成电路基金二期于2018年以明股实债方式进入，不谋求实际控制，到期后SMIC回购退出；</li>
+<li>紫光股份于2017年12月增资，后定期减持退出；</li>
+<li><ul>
+<li>目前紫光在完成大量并购后已过渡到先进制程自主研发阶段，如2016年12月30日投资成立紫光武汉半导体产业基地长江存储、2017年2月12日投资300亿美元成立紫光南京半导体产业基地。因此其很有可能利用本次危机过渡到下一个发展新阶段</li>
+</ul>
+</li>
+<li><ul>
+<li>紫光本身由清华大学控股，上面是国家教育局，可以为其提供基建补贴，且其最新一轮融资中的战略投资人最终可穿透到中国投资有限责任公司，其对外投资的资金来源为国家财政部，故判断其后续发展会积极响应国家发展半导体的产业政策。</li>
+</ul>
+</li>
+<li><ul>
+<li>招股书表明，母公司股权比例5%以上的主要股东无一致行动协议、无股东有一票否决权； </li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>董事会层面</li>
+</ol>
+<ul>
+<li>该阶段由周子学（公职人员）担任董事长，仅负责管理</li>
+<li>2017年10月16日，梁孟松与赵海军共同担任执行董事（双CEO），不代表任何主要或控股股东，负责公司经营管理；</li>
+<li>2020年12月15日，蒋尚义担任副董事长及执行董事，负责公司经营管理。</li>
+</ul>
+<ol start="3">
+<li>重大资产（知识产权）层面：2017年10月16日，梁孟松（450项半导体专利、台积电前研发处资深处长）进入中芯国际，任职期间中芯国际实现了28nm到7nm制程芯片突破；后续蒋尚义（德州仪器和惠普工作、台积电原COO）加入后，公司并无新增专利（显示专利仍在审理），且试图通过谈判引进荷兰ASML公司的EUV光刻机未果。</li>
+</ol>
+<p><strong>按存储芯片类型分</strong><br><a target="_blank" rel="noopener" href="https://uploader.shimo.im/f/hAKhTCRbmyb1zASx.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NDU1ODczNDEsImciOiJlMUF6RG5tUGxtZlo5bXFXIiwiaWF0IjoxNjQ1NTg3MDQxLCJ1c2VySWQiOjEyMjM0MzYxfQ.4UYv4vHXf69LJj5zg6xFeoWC6KQSWzxtwZ-DpJEGlic">https://uploader.shimo.im/f/hAKhTCRbmyb1zASx.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NDU1ODczNDEsImciOiJlMUF6RG5tUGxtZlo5bXFXIiwiaWF0IjoxNjQ1NTg3MDQxLCJ1c2VySWQiOjEyMjM0MzYxfQ.4UYv4vHXf69LJj5zg6xFeoWC6KQSWzxtwZ-DpJEGlic</a><br>注：以上截图摘自研报</p>
+<p><strong>易失性存储芯片（以DRAM为例）</strong><br>细分领域背景：DRAM是存储器第一大细分市场，从全球化来看为周期性领域。</p>
+<ul>
+<li>国内外对比：全球DRAM市场被韩国三星、韩国SK海力士、美国美光三家供应商垄断，台湾南亚为主要竞争者，中国企业先前在存储领域没有技术和生产工厂。</li>
+<li>国内与国际的关键差距：投产、技术（规避复杂的专利网）</li>
+<li>国内现状：目前中国DRAM主要来自长鑫存储。<br>目前中国DRAM主要来自长鑫存储。2017年，长鑫存储由北京兆易创新和合肥产投联合投资项目，基于兆易创新和合肥产投的合作协议，分析得出长鑫存储实际控制情况如下：</li>
+</ul>
+<p><strong>股权层面实际控制实现方式：长鑫存储由朱一明通过双GP模式实际控制</strong></p>
+<ul>
+<li>2018年朱一明从王宁国手中接任长鑫存储及睿力CEO，通过双GP模式实际控制合肥长鑫，标志长鑫由建厂摸索期进入以研发、量产、营销为主的新阶段；</li>
+<li>主要股东朱一明：通过执行事务合伙人获得石溪集电经营管理权+朱一明实际控股兆易创新=朱一明实际控制长鑫存储33.17%股份的表决权；【朱一明实际控制兆易创新依据：从<strong>股权层面</strong>，朱一明始终为兆易创新第一大股东，且通过GP模式控制兆易创新其他主要股东的表决权；其他主要股东如香港赢富得已与朱一明签署一致行动协议，其余小股东持股比例分散且均为财务投资者，不谋求公司实际控制；从<strong>董事会层面</strong>，朱一明一直担任兆易创新的总经理和董事长职务，全面负责公司日常生产和经营管理。从<strong>管理层层面</strong>，朱一明始终是兆易创新的重要核心技术人员。】</li>
+<li>主要股东合肥产投和大基金：作为LP，将大量国有资本交给小量出资的GP，只为实现产业落地不谋求股权控制，产业向好后允许股权协议退出（合肥政府采取这种投资模式的主要原因可能为合肥产业基础薄弱）。【依据为合作协议中的损益分配“兆易创新在项目目标完成后需收购合肥产投在本项目中的权利；未能实现目标则由兆易创新和合肥产投按1：4共担损益”】</li>
+<li>主要股东兆易创新：主营Nor Flash需求增长；DRAM项目需进一步做大做强。然而Nor Flash业务资金需求量大；DRAM项目有技术限制，因此和地方资本合作，利用小股权比例投资，获得有自研技术的长鑫存储的优先代工服务。<br><a target="_blank" rel="noopener" href="https://uploader.shimo.im/f/T35AoytyU1N5vweN.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NDU1ODczNDEsImciOiJlMUF6RG5tUGxtZlo5bXFXIiwiaWF0IjoxNjQ1NTg3MDQxLCJ1c2VySWQiOjEyMjM0MzYxfQ.4UYv4vHXf69LJj5zg6xFeoWC6KQSWzxtwZ-DpJEGlic">https://uploader.shimo.im/f/T35AoytyU1N5vweN.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NDU1ODczNDEsImciOiJlMUF6RG5tUGxtZlo5bXFXIiwiaWF0IjoxNjQ1NTg3MDQxLCJ1c2VySWQiOjEyMjM0MzYxfQ.4UYv4vHXf69LJj5zg6xFeoWC6KQSWzxtwZ-DpJEGlic</a></li>
+</ul>
+<p><strong>附：研发层面长鑫存储实现完全技术路径独立</strong><br>优先承接兆易创新DRAM产品的代工需求，但兆易创新不提供技术支撑。【判断依据为合作协议中规定：“非为本项目之目的，未经对方同意双方（兆易创新和合肥产投）不可直接或为第三人雇佣或招揽为本项目提供服务的职员或技术人员”】</p>
+<p><strong>非易失性存储芯片（以NAND FLASH为例）</strong><br>细分领域背景：存储器的第二大细分市场，基本演变模式为向高层演变。<br><a target="_blank" rel="noopener" href="https://uploader.shimo.im/f/pL5IRiwfbgd9q5rU.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NDU1ODczNDEsImciOiJlMUF6RG5tUGxtZlo5bXFXIiwiaWF0IjoxNjQ1NTg3MDQxLCJ1c2VySWQiOjEyMjM0MzYxfQ.4UYv4vHXf69LJj5zg6xFeoWC6KQSWzxtwZ-DpJEGlic">https://uploader.shimo.im/f/pL5IRiwfbgd9q5rU.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NDU1ODczNDEsImciOiJlMUF6RG5tUGxtZlo5bXFXIiwiaWF0IjoxNjQ1NTg3MDQxLCJ1c2VySWQiOjEyMjM0MzYxfQ.4UYv4vHXf69LJj5zg6xFeoWC6KQSWzxtwZ-DpJEGlic</a><br>典型公司：长江存储，成立于2016年作为国家战略级项目，主要由国家大基金和地方产业基金入资支持。【之所以可以作为国家战略级项目，猜测其中原因为一方面高层Nand Flash需求持续增长，而长江存储可独立提供3DNand闪存设计、制造和存储器解决方案服务；且Nand Flash竞争壁垒较高，国内其他类似公司很难短时间内进入。因尚未深入研究该领域故以上均为猜测。】</p>
+<p>长江存储项目出资过程：<br><a target="_blank" rel="noopener" href="https://uploader.shimo.im/f/039p7DfB1Wshgqwy.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NDU1ODczNDEsImciOiJlMUF6RG5tUGxtZlo5bXFXIiwiaWF0IjoxNjQ1NTg3MDQxLCJ1c2VySWQiOjEyMjM0MzYxfQ.4UYv4vHXf69LJj5zg6xFeoWC6KQSWzxtwZ-DpJEGlic">https://uploader.shimo.im/f/039p7DfB1Wshgqwy.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NDU1ODczNDEsImciOiJlMUF6RG5tUGxtZlo5bXFXIiwiaWF0IjoxNjQ1NTg3MDQxLCJ1c2VySWQiOjEyMjM0MzYxfQ.4UYv4vHXf69LJj5zg6xFeoWC6KQSWzxtwZ-DpJEGlic</a><br>1）一期由国家集成电路产业投资基金股份有限公司、湖北国芯产业投资基金合伙企业（有限合伙）和湖北省科技投资集团有限公司共同出资，在武汉新芯（政府背景）基础上建立，武汉新芯成为长江存储的全资子公司（下面对武汉新芯有具体分析），负责Nor Flash，长江存储负责Nand Flash，实现Flash业务协同。<br>2）二期由紫光集团和国家集成电路产业投资基金股份有限公司共同出资。2016年7月，紫光集团加入成立长江存储，持有股份超过50%实现控股，紫光集团董事长赵伟国则担任新公司总裁；2017年1月，紫光集团加投300亿美元。</p>
+<p>股权层面实际控制实现方式：紫光集团通过直接控股和持续增资实现控股<br><a target="_blank" rel="noopener" href="https://uploader.shimo.im/f/xFsmKw2nlTYNtrSS.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NDU1ODczNDEsImciOiJlMUF6RG5tUGxtZlo5bXFXIiwiaWF0IjoxNjQ1NTg3MDQxLCJ1c2VySWQiOjEyMjM0MzYxfQ.4UYv4vHXf69LJj5zg6xFeoWC6KQSWzxtwZ-DpJEGlic">https://uploader.shimo.im/f/xFsmKw2nlTYNtrSS.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NDU1ODczNDEsImciOiJlMUF6RG5tUGxtZlo5bXFXIiwiaWF0IjoxNjQ1NTg3MDQxLCJ1c2VySWQiOjEyMjM0MzYxfQ.4UYv4vHXf69LJj5zg6xFeoWC6KQSWzxtwZ-DpJEGlic</a></p>
+<ul>
+<li>投资逻辑：通过入股实现并购，拓展存储器设计制造新业务</li>
+<li>业务诉求：旗下的存储器厂商紫光国芯产品委托专业代工厂生产，产能供不应求</li>
+<li>资本来源：国家资本</li>
+<li><ul>
+<li>紫光集团穿透后是清华大学，再往上应为国家教育局，属于国家资本；</li>
+</ul>
+</li>
+<li><ul>
+<li>和国家大基金及武汉市地方产业基金合作出资；</li>
+</ul>
+</li>
+<li>进入机制：直接控股进入，并在董事会层面占据董事长席位</li>
+<li>运作及退出机制：未查到紫光集团和武汉新芯的合作协议</li>
+</ul>
+<p><strong>附：研发层面长江存储始终坚持自主研发</strong></p>
+<ul>
+<li>成立初期，生产研发3DNand Flash、DRAM存储芯片；</li>
+<li>2017年11月，长江存储成为全球第五家能生产3DNand Flash芯片的厂家；</li>
+<li>2019年9月，基于Xtacking架构的64层3DNand Flash正式量产。</li>
+</ul>
+<p><strong>附：武汉新芯业务诉求及实际控制变更情况</strong><br><a target="_blank" rel="noopener" href="https://uploader.shimo.im/f/tLsg8yTbFiUMwl2x.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NDU1ODczNDEsImciOiJlMUF6RG5tUGxtZlo5bXFXIiwiaWF0IjoxNjQ1NTg3MDQxLCJ1c2VySWQiOjEyMjM0MzYxfQ.4UYv4vHXf69LJj5zg6xFeoWC6KQSWzxtwZ-DpJEGlic">https://uploader.shimo.im/f/tLsg8yTbFiUMwl2x.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NDU1ODczNDEsImciOiJlMUF6RG5tUGxtZlo5bXFXIiwiaWF0IjoxNjQ1NTg3MDQxLCJ1c2VySWQiOjEyMjM0MzYxfQ.4UYv4vHXf69LJj5zg6xFeoWC6KQSWzxtwZ-DpJEGlic</a></p>
+<p><strong>非易失存储芯片（以MRAM为例）</strong><br>细分领域背景：MRAM比SRAM有更高的密度优势；即使存储单元没有电源，也可以保留其数据；能耗小于DRAM；DRAM可靠性不佳；使用寿命长于DRAM<br>典型公司：杭州积海半导体，成立于2019年9月6日，成立时间较短，无股权变更历史。 </p>
+<ul>
+<li>股权层面实际控制实现方式：LU YI通过单GP模式控股<br><a target="_blank" rel="noopener" href="https://uploader.shimo.im/f/4cxvSa90YXgJvX9I.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NDU1ODczNDEsImciOiJlMUF6RG5tUGxtZlo5bXFXIiwiaWF0IjoxNjQ1NTg3MDQxLCJ1c2VySWQiOjEyMjM0MzYxfQ.4UYv4vHXf69LJj5zg6xFeoWC6KQSWzxtwZ-DpJEGlic">https://uploader.shimo.im/f/4cxvSa90YXgJvX9I.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NDU1ODczNDEsImciOiJlMUF6RG5tUGxtZlo5bXFXIiwiaWF0IjoxNjQ1NTg3MDQxLCJ1c2VySWQiOjEyMjM0MzYxfQ.4UYv4vHXf69LJj5zg6xFeoWC6KQSWzxtwZ-DpJEGlic</a></li>
+<li>研发层面实际控制实现方式：致力于MRAM技术研发，与<strong>世界著名的工业研究所建立联合开发伙伴关系</strong>；计划在未来几年内建立完整的MRAM生产能力，并将成为这一关键的新兴NVM技术的关键参与者。公司本身掌握该领域核心技术，具体研发方式未披露。</li>
+</ul>
+<p><strong>控制权实现方式异同分析</strong><br><strong>目标公司设想范围：应拥有半导体产业的先进工艺，或产品迭代速度跟得上市场</strong><br><strong>实际控制设想逻辑：在很多战略投资人试图实现控制的情况下，我方应尽量以最小代价确保进入实现快速控制且巩固控制。</strong></p>
+<p>股权、董事会、重大资产层面的措施应覆盖以上要点：<br>A）进入机制<br>确保进入（股权）<br>最小金钱代价-小股本（股权）<br>最小时间代价-快速控制（根据不同阶段诉求）<br>B）运作机制<br>被其他股东控制的风险（间接持股/确保自己增资/阻碍其他股东增资）<br>C）退出机制<br>快速知道风险（被其他公司收购/核心人员离职/宏观经济风险）、快速应对风险（快速退出）<br>基于以上，下面总结对比不同类型半导体不同阶段业务诉求和对应实现控制方式</p>
+<p><strong>晶圆代工厂（发展历史长）：经营模式为Foundry</strong></p>
+<ul>
+<li><p>成立初期：为快速切入市场增设生产线所需资金量大，加上技术垄断需从外部引入专利<br>控制权实现方式：从股权层面股权总体分散无控股股东情况下以小股份比例（最小金钱代价）进入与公司利益保持一致（确保进入）；从董事会层面实际控制人确保不出现其他单一股东在董事会占比过大现象（巩固控制）；从重大资产层面由于自研工艺耗时长故引入关键研发工艺（快速实现控制）</p>
+</li>
+<li><p>成立中期混乱阶段：设备未折旧完全导致经营持续亏损时尝试制程升级<br>控制权实现方式：从股权层面整体利益混乱不一致情况下抄底进入（最小金钱代价）；从董事会层面引入核心人员控制局面</p>
+</li>
+<li><p>成立中期稳定阶段：本身核心业务过了高速发展时期，发展可协同新业务以实现长期盈利为后续发展蓄力<br>控制权实现方式：由于前期已形成了分散的股权结构，若再从股权层面试图控制，一方面由于各股东间关系的不确定性，会对后续控制权维持带来风险，可以小股本比例进入（确保进入&amp;降低金钱代价）；可考虑从董事会层面引入研发专家担任核心董事（快速控制&amp;巩固控制）</p>
+</li>
+<li><p>成立后期突破阶段：实现科技创新，开发国际前沿技术，提高国际竞争力<br>控制权实现方式：由于前期已形成了分散的股权结构，若再从股权层面试图控制，一方面由于各股东间关系的不确定性，会对后续控制权维持带来风险，可以小股本比例进入（确保进入&amp;降低金钱代价）；可考虑从董事会层面引入研发/国际谈判专家担任核心董事（快速&amp;巩固控制）</p>
+</li>
+</ul>
+<p>存储器芯片公司（发展历史短）：经营模式以IDM为主<br>由于发展历史短，故其股东结构项目较晶圆代工厂没有那么复杂，可优先考虑直接在股权层面实现实际控制（确保进入&amp;快速实现控制）并持续增资扩股（巩固控制），为了降低金钱代价，股权层面方式有直接控股、间接持股（金字塔型持股&amp;交叉持股）；从董事会层面降低风险引入核心董事；从重大资产层面，引入研发专家或提供关键设备原材料巩固控制。</p>
+<p><strong>半导体行业趋势预判</strong><br><strong>（一）国家投资重点层面</strong><br>对比大基金和科创板分析半导体行业投资逻辑如下：<br><a target="_blank" rel="noopener" href="https://uploader.shimo.im/f/KbXAovBVPm70Wm54.png?sm_xform=image/crop,x_0,y_23,w_1413,h_354&amp;accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NDU1ODczNDEsImciOiJlMUF6RG5tUGxtZlo5bXFXIiwiaWF0IjoxNjQ1NTg3MDQxLCJ1c2VySWQiOjEyMjM0MzYxfQ.4UYv4vHXf69LJj5zg6xFeoWC6KQSWzxtwZ-DpJEGlic">https://uploader.shimo.im/f/KbXAovBVPm70Wm54.png?sm_xform=image%2Fcrop%2Cx_0%2Cy_23%2Cw_1413%2Ch_354&amp;accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NDU1ODczNDEsImciOiJlMUF6RG5tUGxtZlo5bXFXIiwiaWF0IjoxNjQ1NTg3MDQxLCJ1c2VySWQiOjEyMjM0MzYxfQ.4UYv4vHXf69LJj5zg6xFeoWC6KQSWzxtwZ-DpJEGlic</a></p>
+<p>大基金为在工信部和财政部指导下成立的国家集成电路产业投资基金股份有限公司，采取公司制的经营模式，但市场化程度不够，无法完全覆盖满足民营半导体企业融资难问题，因此通过科创板为半导体企业提供长期稳定的资本支持。《科创板企业上市推荐指引》明确：保荐机构应当重点推荐七大领域的科技创新企业，其中半导体集成电路企业排名第一。</p>
+<p>科创板与大基金投资模式：：<br>大基金：一期以中游<strong>IC制造</strong>为主要投资对象，其次是设计，原因可能为大基金资金量大，而中游企业规模大资金需求也大，故大基金进入一方面可为其提供充足资金以实现国家产业升级，另一方面持股比例大也可避免这些企业被外资控制，从而威胁到国民经济；二期主要目的为扶持龙头企业做大做强（支持中游龙头企业），并保障半导体产业链供应安全（逐渐过渡到产业上游的<strong>设备与材料</strong>企业）。<br>科创板：可以和大基金市场化程度不足这一特点形成互补，原因为科创板对资本来源包容性强，可以使地方政府和市场均衡作用于广大中小半导体企业，保证持久稳定的资金供应。科创板目前未明确规定投资对象，但经分析更适合帮扶上游设备与材料和中游IC设计企业，原因为科创板资金来源分散多元，集中度弱于大基金，但市场化程度更高，持久力更强，又因为我国初期的设备、材料、IC设计企业规模不大且分布不集中这一特点，与科创板资金的体量和来源分布特点极为相似。</p>
+<p>行业趋势：目前大基金和科创板在半导体行业的投资重点均逐渐由中游制造企业过渡到上游的设备和材料研发企业，猜测这一定程度暗示了我国半导体行业未来的行业趋势——<strong>会加大产业链上游基础性生产资料的研发和产业化投入</strong>。</p>
+<p><strong>（二）宏观经济层面</strong><br>下面从宏观经济层面分析半导体行业趋势。</p>
+<p><strong>研究逻辑：</strong></p>
+<ol>
+<li>政策决定宏观经济：美联储预设的长期基准利率会对国家经济活动产生长期影响，以此初步得出半导体行业的长期趋势</li>
+<li>针对近期风险，美联储出台会出台调控举措（财政政策）。这些调控举措会对半导体行业趋势产生影响，这里选取信贷角度分析该影响，原因为信贷和future you有关，因此predictable。【美国调控举措会影响我国发放的信贷规模及流向，基于此可判断我国目前在经济周期中所处的位置；结合行业特点和我国产业政策，得出未来我国信贷的主要流向行业；结合半导体行业不同类型公司涉及信贷的特点，判断半导体行业未来业务转型方向及实现方式】</li>
+<li>判断以上两种方法得出的半导体行业趋势结论是否一致</li>
+</ol>
+<p><strong>具体研究：</strong></p>
+<ol>
+<li>基于国际政策的半导体行业长期趋势预判<br>政策发布：疫情期间，为刺激经济和实现充分就业目标，2020年9月1日，美联储采取量化宽松的财政和货币政策，承诺将联邦基准利率在2023年前维持在零。</li>
+</ol>
+<p>政策影响：<br>观点一：受长期低基准利率影响，投资者会减少银行存款，倾向于将钱投入股市，可能会引发股市泡沫化现象。股市高估值会促使公司加大股权融资力度。<br>【对我国半导体行业中游芯片制造公司的影响主要是，他们可能会抓住股市高估值的契机，通过上市募资。2020年7月，中芯国际于科创板上市后股价狂飙就是一大例子，特别的，它还将消耗资金的设备通过代工子工厂转化为可以引入外部收入的资金来源。】</p>
+<p>观点二：受到宽松货币政策的影响，流向股市、债市、房产等关键性领域的货币供应增加，干扰市场定价，有引发美国通货膨胀的风险。<br>【对我国半导体公司而言，对原材料和设备的资金需求大，美国通货膨胀会导致我国进口成本大幅增加，但可以通过国产化来解决这一问题，利好我国半导体行业上游基础性生产资料（设备+原材料）研发公司。】</p>
+<p>观点三：同时，股市高估值和极低的借贷成本会激励公司发展业务，员工雇佣人数可能增加，促进半导体行业产业升级，追上国际化水平。</p>
+<ol start="2">
+<li>从信贷角度基于最新事件的行业趋势分析<br>立足点：信贷和future有关且predictable，可用于预判趋势。<br>原理参考：Ray Dalio的How Economic Machine Works及《债务危机》<br>理论提炼：<br><a target="_blank" rel="noopener" href="https://uploader.shimo.im/f/tEYsys2auP6EVp47.docx?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NDU1ODczNDEsImciOiJlMUF6RG5tUGxtZlo5bXFXIiwiaWF0IjoxNjQ1NTg3MDQxLCJ1c2VySWQiOjEyMjM0MzYxfQ.4UYv4vHXf69LJj5zg6xFeoWC6KQSWzxtwZ-DpJEGlic">https://uploader.shimo.im/f/tEYsys2auP6EVp47.docx?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NDU1ODczNDEsImciOiJlMUF6RG5tUGxtZlo5bXFXIiwiaWF0IjoxNjQ1NTg3MDQxLCJ1c2VySWQiOjEyMjM0MzYxfQ.4UYv4vHXf69LJj5zg6xFeoWC6KQSWzxtwZ-DpJEGlic</a><br>下面基于最新调控举措分析我国目前经济周期（短债周期）中所处的位置</li>
+</ol>
+<p><strong>最新调控举措：</strong><br>为了应对去年宽松政策可能引发长期通货膨胀的风险，美联储的货币政策从扩张变为收缩；11月中旬美联储缩减购入国债规模。</p>
+<p><strong>我国经济周期所处位置分析：</strong><br>2020年，受到疫情影响，全球经济环境重置，出现了2020年到2021年的经济大复苏现象。在我国对外发布信贷方面，今年11月美国收紧货币政策，减少购入本国国债(Taper)的规模，而中国的人民币国际化流通规模在增加且从疫情中恢复速度快，经济活动持续扩张，故外资大量进入中国股债市，从而增加我国对外发布的信贷；在我国对内发布信贷方面，一般来说我国制造进口均价会高于出口，且美国通货膨胀会导致我国进口产品成本大幅增加，因此需要加大本国自产力度，提高本国经济水平，这一过程我国会对内发放大量信贷。由于原先对外发布的信贷高于对内，而目前我国将信贷重点用于内部生产，故判断我国正处于<strong>经济周期后期复苏上行</strong>阶段。</p>
+<p><strong>半导体行业趋势分析：</strong><br>在这一阶段，由于房地产和基建为我国信贷的主要支持行业。但由于房地产行业具有高杠杆属性，对低利率极为敏感，若持续注入信贷会导致房价暴涨，经济扩张过于迅猛，全球历史上房地产泡沫都始于低利率刺激，后又因大量注入的信贷走向疯狂，最终引发债务危机。为防范这一风险，2021年我国已警惕并采取措施加强对地产行业的信贷需求审核，并收紧房地产融资，因此判断我国信贷未来会大量流入基建行业。基于这一猜测，判断此信贷流动趋势对半导体行业的影响。（疫情对行业公司的冲击要求不同类型的半导体公司灵活调整业务以快速应对危机中的不确定性）</p>
+<p>对我国半导体行业中游的芯片制造公司而言，这类公司为<strong>顺周期性</strong>企业，随着经济活动增加（信贷增加）公司相关产品价值增加，因此国家会愿意在该类公司中注入大量信贷；且芯片制造企业具有<strong>长周期性</strong>，具体表现为项目立项建设到投产时间及主要设备折旧期都很长，所以从投入资金到实现回报的间隔时间很长，设备持续折旧导致经营利润小且折旧完的设备会老化报废，故这段时间内的信贷本质为无法持续制造收入和积累资源的bad debt；并且长周期性要求企业通过产业升级缩短从投入到实现回报的时间；产业升级的关键是在充分利用现有优势的基础上向盈利性更大的方向演变，由于该类公司是中游制造芯片公司（高科技重资产企业），可充分利用现有设备材料资源向上游基础资料方向演变（利润更高、技术最难）；虽然上游市场空间不大，但中游公司正好可以借国家信贷支持这一契机实现业务转型。</p>
+<p>对半导体行业上游的设备材料公司而言，由于中游芯片制造公司对原材料和设备的需求量大，再加上前述的受美国通货膨胀影响我国制造产品进口成本过高需要提高国产率，因此利好上游基础性生产资料公司。</p>
+<ol start="3">
+<li>暂未发现以上两种方法得出结论的矛盾</li>
+</ol>
+<p><strong>以下根据行业趋势预判和未来国家政策判断紫光集团未来发展。</strong><br>我国当前政策：目前国家十三五规划将集成电路生产制造作为半导体行业战略发展重点<br>行业趋势：半导体行业未来会以上游基础性生产资料研发为主<br>我国政策预判：国内投资从策略重点逐渐由集成电路生产商过渡到关键设备及材料自研公司，猜测十四五规划会鼓励将研发关键设备及材料作为半导体行业战略重点。</p>
+<p>基于下面分析，猜测紫光会开始自研关键设备及材料。<br>分析一：紫光最终选择合适时机退出中芯国际<br>分析二：紫光会利用近期危机过渡到下一个发展阶段<br>分析三：紫光会积极响应国家发展半导体的产业政策</p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>ZYderAloha</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="https://may-gem-hexo-site-default.layer0-limelight.link/2022/01/28/ControllingInterest/">https://may-gem-hexo-site-default.layer0-limelight.link/2022/01/28/ControllingInterest/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2020</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>A violet in the youth of primy nature, forward, not permanent.</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/controlling-interest/"># controlling interest</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2022/01/18/VCFund/">Investment and Legal DD Logic | VC Fund</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© ZYderAloha | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
